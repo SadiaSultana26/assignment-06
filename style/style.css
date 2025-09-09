@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+.hind-madurai{
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+
+/* Main Container */
+.container { display: flex;justify-content: space-between; gap: 1rem; padding: 2rem; }
+
+/* Sidebar */
+.sidebar { background: #ecfdf5; padding: 1rem; border-radius: 8px; }
+.category-list button { display: block; width: 100%; margin: 0.3rem 0; padding: 0.5rem; border: 1px solid #10b981; border-radius: 5px; background: white; cursor: pointer; }
+.category-list .active { background: #10b981; color: white; }
+
+/* Cards */
+.cards-section { padding: 1rem; }
+.cards-grid { display: grid; justify-content: space-between; grid-template-columns: repeat(3,5fr); gap: 1rem; }
+.card { background: white; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+.card img { max-width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
+.card h4 { margin: 0.5rem 0; cursor: pointer; }
+.card button { margin-top: 0.5rem; }
+
+/* Cart */
+.cart { background: white; padding: 1rem; border-radius: 8px; }
+.cart ul { list-style: none; margin-top: 0.5rem; }
+.cart li { display: flex; justify-content: space-between; margin-bottom: 0.3rem; }
+
+/* Mobile responsiveness using a Media Query */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, 1fr); /* Displays one card per row on mobile devices */
+    }
+    
+}
